@@ -5,6 +5,21 @@ O sistema foi desenvolvido com **React + TypeScript + Firebase**, focado em simp
 
 ---
 
+## ⚠️ Observação Importante
+
+Este repositório é **apenas demonstrativo**, criado exclusivamente para **portfólio**.  
+Ele contém o código-fonte completo, mas **não possui credenciais reais do Firebase**.
+
+👉 Isso significa que:
+
+- O projeto **não está configurado para rodar localmente**.
+- O arquivo `.env.example` existe apenas para mostrar quais variáveis seriam necessárias em um ambiente real.
+- Qualquer tentativa de rodar resultará em erro de inicialização do Firebase (_invalid-api-key_).
+
+O objetivo aqui é que recrutadores e interessados possam **analisar a arquitetura, organização e tecnologias utilizadas**, sem exposição de informações sensíveis.
+
+---
+
 ## ✨ Funcionalidades
 
 ### 👤 Área do Cliente
@@ -52,9 +67,7 @@ O sistema foi desenvolvido com **React + TypeScript + Firebase**, focado em simp
 
 ---
 
-## 🚀 Como rodar o projeto localmente
+## 📜 Licença
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
+Este projeto está sob a licença **MIT**.  
+Consulte o arquivo [LICENSE](./LICENSE) para mais informações.

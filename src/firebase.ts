@@ -9,15 +9,16 @@ import {
 } from "firebase/auth";
 import { initializeFirestore, type Firestore } from "firebase/firestore";
 import { getStorage, type FirebaseStorage } from "firebase/storage";
-import { getFunctions, type Functions } from "firebase/functions"; // ⬅️ novo
+import { getFunctions, type Functions } from "firebase/functions";
 
+// 🔒 Configuração agora vem do .env (nunca hardcoded!)
 const firebaseConfig = {
-  apiKey: "AIzaSyD75Rbs_myhY-qJc_2uwZYI3t2mrLMUuTI",
-  authDomain: "mind-15e12.firebaseapp.com",
-  projectId: "mind-15e12",
-  storageBucket: "mind-15e12.firebasestorage.app", // correto
-  messagingSenderId: "843116734440",
-  appId: "1:843116734440:web:64d1eab1e7d8c67f7aa65d",
+  apiKey: import.meta.env.VITE_API_KEY!,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN!,
+  projectId: import.meta.env.VITE_PROJECT_ID!,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET!,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID!,
+  appId: import.meta.env.VITE_APP_ID!,
 };
 
 export const app: FirebaseApp = getApps().length ? getApp() : initializeApp(firebaseConfig);
@@ -37,7 +38,7 @@ export const db: Firestore = initializeFirestore(app, {
 });
 
 // 🔧 Storage (bucket explícito)
-export const storage: FirebaseStorage = getStorage(app, "gs://mind-15e12.firebasestorage.app");
+export const storage: FirebaseStorage = getStorage(app, `gs://${import.meta.env.VITE_STORAGE_BUCKET}`);
 
 // 🔧 Functions (usa o mesmo app)
 export const functions: Functions = getFunctions(app, "us-central1");
