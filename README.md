@@ -24,21 +24,20 @@ O objetivo aqui é que recrutadores e interessados possam **analisar a arquitetu
 
 ### 👤 Área do Cliente
 
-- Cadastro e login de usuário
-- Preenchimento e edição de questionário pessoal
-- Acesso às informações cadastradas
+- Acesso às informações de profissionais e serviços
 
 ### 🩺 Área do Profissional
 
 - Visualização da própria agenda de consultas
 - Acesso aos dados básicos dos clientes das consultas
-- Espaço para observações/prontuários (implementação inicial)
+- Espaço para observações/prontuários e documentos
 
 ### 👨‍💼 Área do Administrador
 
-- Cadastro de novos usuários (cliente, profissional, admin)
+- Cadastro de novos usuários (cliente, profissional)
 - Gerenciamento de agendamentos da clínica
 - Visualização geral do sistema
+- Espaço para observações/prontuários e documentos
 
 ---
 
