@@ -24,7 +24,7 @@ O objetivo aqui é que recrutadores e interessados possam **analisar a arquitetu
 
 ### 👤 Área do Cliente
 
-- Acesso às informações de profissionais e serviços
+- Acesso às informações de profissionais e serviços na home page
 
 ### 🩺 Área do Profissional
 
